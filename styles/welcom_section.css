@@ -1,0 +1,41 @@
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  background-color: #000;
+}
+
+.welcome-text {
+  max-width: 50%;
+  font-family: "Roboto";
+  font-size: 32px;
+}
+
+.welcome-text h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.welcome-text p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #710707;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.welcome-image img {
+  max-width: 500px;
+  height: auto;
+  border-radius: 8px;
+}
