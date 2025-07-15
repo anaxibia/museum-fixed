@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "Roboto";
   src: url("/assets/fonts/roboto/Roboto-Medium.ttf");
   font-weight: 500;
@@ -27,6 +27,15 @@
   src: url("/assets/fonts/roboto/Roboto-Italic.ttf");
   font-weight: 400;
   font-style: italic;
+} */
+
+:root {
+  --bg-dark: #030303;
+  --dark-red: #710707;
+  --font-gold: #9d8665;
+  --font-gold-active: #7E6C51;
+  --white: rgba(255, 255, 255, 1);
+  --black: #000;
 }
 
 html {
@@ -35,14 +44,16 @@ html {
 
 body {
   /* Position */
-  margin: 0;
+  width: 1440px;
+  margin: 0 auto;
   padding: 0;
+  position: relative;
   /* Typography */
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
-  background-color: #000;
+  background-color: var(--black);
 }
 
 header {
@@ -50,13 +61,19 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
-  background-color: #000;
+  background-color: var(--black);
+  font-family: "Forum";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 5px;
 }
 
 #page-logo {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-transform: uppercase;
 }
 
 #page-logo img {
@@ -68,11 +85,11 @@ header {
 }
 
 p {
-  color: white;
+  color: var(--white);
 }
 
 h1 {
-    color: white;
+    color: var(--white);
 }
 
 ul {
@@ -84,17 +101,18 @@ li {
 }
 
 a {
-  color: white;
-  transition: color 0.5s ease-in;
+  color: var(--white);
+  /* transition: color 0.5s ease-in; */
 }
 
 a:link {
   text-decoration: none;
 }
 
-a:visited {
+/* a:visited {
   text-decoration: none;
-}
+  color: #9d8665;
+} */
 
 .nav_list {
   display: flex;
@@ -110,8 +128,30 @@ a:visited {
 .nav_item {
   padding: 0 20px;
   border-radius: 5px;
-  transition: background-color 0.5s ease-in;
-  color: white;
+  /* transition: background-color 0.5s ease-in; */
+  width: 85px;
+  height: 26px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 1);
+}
+
+a.link-dark:link {
+  color: var(--white);
+  background-color: var(--bg-dark);
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+a.link-dark:hover {
+  color: var(--font-gold);
+}
+
+a.link-dark:active {
+  color: var(--font-gold-active);
 }
 
 @media (max-width: 768px) {
