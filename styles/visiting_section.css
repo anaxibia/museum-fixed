@@ -25,12 +25,27 @@
     margin: 0 0 40px;
 }
 
-.custom-line-bottom{
+.custom-line-bottom {
     border: none;
     width: 1.440px;
     height: 3px;
     background-color: var(--dark-red);
     margin: 0;
+}
+
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 0 auto;
+}
+
+.tour-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
 }
 
 
@@ -43,6 +58,9 @@
     text-transform: uppercase;
     color: var(--black);
     margin-bottom: 10px;
+    white-space: nowrap;
+    /* Не переносить строки */
+    overflow: hidden;
 }
 
 .tour-title-link .custom-line-bottom {
@@ -50,7 +68,7 @@
     position: relative;
     bottom: -4px;
     left: 0;
-    width: 20%;
+    width: 70%;
     height: 2px;
     background-color: var(--dark-red);
     transition: width 0.3s ease;
@@ -58,7 +76,7 @@
 }
 
 .tour-title-link:hover .custom-line-bottom {
-    width: 30%;
+    width: 100%;
 }
 
 .tour-subtitle {

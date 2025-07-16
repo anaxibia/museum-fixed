@@ -1,6 +1,6 @@
 .welcome {
   background-color: var(--black);
-  height: 70vh;
+  height: 750px;
   overflow: hidden;
   position: relative;
 }
