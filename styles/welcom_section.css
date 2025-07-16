@@ -1,17 +1,8 @@
-:root {
-  --bg-dark: #030303;
-  --dark-red: #710707;
-  --font-gold: #9d8665;
-  --font-gold-active: #7E6C51;
-  --white: #FFFFFF;
-  --black: #000;
-}
 .welcome {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
-  /* padding: 80px 60px; */
   background-color: var(--black);
+  height: 70vh;
+  overflow: hidden;
+  position: relative;
 }
 
 .welcome-text {
