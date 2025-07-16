@@ -10,7 +10,7 @@
   /* display: flex;
   align-items: center;
   justify-content: space-between; */
-  padding: 80px 60px;
+  /* padding: 80px 60px; */
   background-color: var(--black);
 }
 
@@ -42,7 +42,7 @@
   background-color: var(--dark-red);
   color: var(--white);
   text-decoration: none;
-  padding: 14px 28px;
+  padding: 26.5px 64px;
   border-radius: 6px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
