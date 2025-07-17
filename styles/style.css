@@ -116,7 +116,6 @@ li {
 
 a {
   color: var(--white);
-  /* transition: color 0.5s ease-in; */
 }
 
 a:link {

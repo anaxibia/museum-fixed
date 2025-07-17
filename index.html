@@ -7,9 +7,13 @@
   <meta name="viewport" content="width=device-width" />
   <title>Museum Louvre</title>
   <link rel="stylesheet" href="styles/style.css" />
+  <link rel="icon" href="assets/images/favicon.ico" />
   <link rel="stylesheet" href="styles/welcom_section.css" />
   <link rel="stylesheet" href="styles/visiting_section.css" />
   <link rel="stylesheet" href="styles/explore_section.css" />
+  <link rel="stylesheet" href="styles/video_section.css" />
+  <link rel="stylesheet" href="styles/gallery_section.css" />
+  <link rel="stylesheet" href="styles/tickets_section.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,7 +81,7 @@
       </div>
     </div>
   </section>
-  <section class="visiting">
+  <section class="visiting" id="visiting">
     <div class="section-content">
       <h2 class="section-title">VIRTUAL TOUR</h2>
       <hr class="custom-line">
@@ -161,7 +165,7 @@
         </div>
       </div>
   </section>
-  <section class="explore">
+  <section class="explore" id="explore">
     <div class="section-content">
       <div class="explore-content">
         <h2 class="explore-title">PICTURE EXPLORE</h2>
@@ -179,8 +183,105 @@
       </div>
     </div>
   </section>
-  <section>
-    <video src=""https://www.youtube.com/embed/zp1BXPX8jcU?si=lB5wtdUteRso8S0_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></video>
+  <section class="video" id="video">
+    <div class="section-content">
+      <div class="explore-content">
+        <h2 id="video-title">VIDEO JOURNEY</h2>
+        <p class="video-text">Enter and visit one of the most famous museums in the world and enjoy </p>
+        <p class="video-text">masterpieces such as Mona Lisa or Hammurabi's Code</p>
+      </div>
+      <div class="video-player">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zp1BXPX8jcU?si=AShqE6rezlz6gJv4"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <iframe
+          src="https://youtu.be/Vi5D6FKhRmo" frameborder="0" allowfullscreen></iframe>
+
+      </div>
+
+      <!-- Три видео-превью -->
+      <div class="video-thumbnails">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zp1BXPX8jcU?si=AShqE6rezlz6gJv4"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <iframe
+          src="https://youtu.be/Vi5D6FKhRmo" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/NOhDysLnTvY" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="gallery" id="gallery">
+    <div class="section-content">
+      <h2 id="gallery-title">ART GALLERY</h2>
+      <div class="custom-gallery">
+        <div class="column col-left">
+          <img src="/assets/images/gallery/galery2.jpg" alt="2">
+          <img src="/assets/images/gallery/galery9.jpg" alt="9">
+          <img src="/assets/images/gallery/galery4.jpg" alt="4">
+          <img src="/assets/images/gallery/galery6.jpg" alt="6">
+        </div>
+        <div class="column col-middle">
+          <img src="/assets/images/gallery/galery1.jpg" alt="1">
+          <img src="/assets/images/gallery/galery8.jpg" alt="8">
+          <img src="/assets/images/gallery/galery3.jpg" alt="3">
+          <img src="/assets/images/gallery/galery5.jpg" alt="5">
+        </div>
+        <div class="column col-right">
+          <img src="/assets/images/gallery/galery7.jpg" alt="7">
+          <img src="/assets/images/gallery/galery10.jpg" alt="10">
+          <img src="/assets/images/gallery/galery15.jpg" alt="15">
+          <img src="/assets/images/gallery/galery12.jpg" alt="12">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="tickets" id="tickets">
+    <h2 id="tickets-title">BUY TICKETS</h2>
+    <hr class="custom-line">
+
+    <div class="tickets-content">
+      <div class="tickets-image">
+        <img src="/assets/images/Exhibition painting.jpg" alt="Exhibition painting" />
+      </div>
+
+      <form class="tickets-form">
+        <div class="ticket-options">
+          <h3>Ticket Type</h3>
+          <label><input type="radio" name="type" checked /> Permanent exhibition</label>
+          <label><input type="radio" name="type" /> Temporary exhibition</label>
+          <label><input type="radio" name="type" /> Combined ticket</label>
+        </div>
+
+        <div class="ticket-amount">
+          <h3>Amount</h3>
+
+          <div class="amount-group">
+            <span>Basic 18+</span>
+            <div class="counter">
+              <button type="button">−</button>
+              <span>1</span>
+              <button type="button">+</button>
+            </div>
+          </div>
+
+          <div class="amount-group">
+            <span>Senior 65+</span>
+            <div class="counter">
+              <button type="button">−</button>
+              <span>1</span>
+              <button type="button">+</button>
+            </div>
+          </div>
+
+          <div class="total">
+            <p>Total <strong>€220</strong></p>
+          </div>
+
+          <button class="buy-btn" type="submit">Buy Now</button>
+        </div>
+      </form>
+    </div>
   </section>
   </main>
 </body>

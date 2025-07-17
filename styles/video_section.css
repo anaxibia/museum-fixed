@@ -1,0 +1,102 @@
+.video {
+    background-color: var(--white);
+}
+
+#video-title {
+    font-family: "Forum", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--font-gold);
+    margin: 0;
+    line-height: 50px;
+    padding-bottom: 30px;
+}
+
+.video-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 38.5px;
+    vertical-align: middle;
+    color: var(--black);
+    margin: 0;
+}
+
+.video-player {
+  margin-top: 20px;
+}
+
+.video-preview {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+
+.preview-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 40px;
+  color: purple;
+  border: 5px solid white;
+  cursor: pointer;
+}
+
+.video-controls {
+  margin-top: 10px;
+}
+
+.progress-bar {
+  background: #ccc;
+  height: 6px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+
+.progress {
+  width: 30%;
+  height: 100%;
+  background: #a00;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.controls input[type="range"] {
+  flex: 1;
+}
+
+.video-thumbnails {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.video-thumbnails iframe {
+  width: 32%;
+  height: 200px;
+  border-radius: 4px;
+}
+
+

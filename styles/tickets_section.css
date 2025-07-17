@@ -1,0 +1,105 @@
+.tickets {
+    background-color: var(--white);
+    margin: 0;
+}
+
+#tickets-title {
+    font-family: "Forum", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--font-gold);
+    margin: 0;
+    line-height: 65px;
+    padding-bottom: 30px;
+}
+
+.line {
+  height: 2px;
+  background-color: #661a1a;
+  border: none;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.tickets-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.tickets-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tickets-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.ticket-options,
+.ticket-amount {
+  flex: 1;
+  min-width: 250px;
+}
+
+.ticket-options h3,
+.ticket-amount h3 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.ticket-options label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+}
+
+.amount-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding: 4px 8px;
+  gap: 10px;
+}
+
+.counter button {
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.counter span {
+  width: 20px;
+  text-align: center;
+}
+
+.total p {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.buy-btn {
+  background-color: black;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 16px;
+}
