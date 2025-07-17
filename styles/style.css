@@ -45,6 +45,7 @@ html {
 body {
   /* Position */
   padding: 0;
+  margin: 0;
   position: relative;
   /* Typography */
   font-family: "Roboto", sans-serif;
@@ -78,6 +79,7 @@ header .section-content {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
+  padding: 100px 0;
 }
 
 #page-logo {
