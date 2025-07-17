@@ -1,0 +1,53 @@
+.explore {
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 2rem; 
+max-width: 1440px;
+  margin: 0 auto;     
+  overflow: hidden;
+  position: relative; 
+  align-items: start; 
+}
+
+.explore-title {
+    font-family: "Forum", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 25px;
+    /* margin-top: 5px; */
+}
+
+.explore-text {
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 38.5px;
+    letter-spacing: 0;
+    color: var(--white);
+    text-align: left;
+}
+
+#yellow-veil {
+    color: var(--font-gold);
+}
+
+.image-compare {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
+
+
+
+
+
+
+
