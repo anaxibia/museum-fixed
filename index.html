@@ -237,52 +237,56 @@
     </div>
   </section>
   <section class="tickets" id="tickets">
-    <h2 id="tickets-title">BUY TICKETS</h2>
-    <hr class="custom-line">
+    <div class="section-content">
+      <h2 id="tickets-title">BUY TICKETS</h2>
+      <hr class="custom-line">
 
-    <div class="tickets-content">
-      <div class="tickets-image">
-        <img src="/assets/images/Exhibition painting.jpg" alt="Exhibition painting" />
+      <div class="tickets-content">
+        <div class="tickets-image">
+          <img src="/assets/images/Exhibition painting.jpg" alt="Exhibition painting" />
+        </div>
+
+        <form class="tickets-form">
+          <div class="ticket-options">
+            <h3>Ticket Type</h3>
+            <label><input type="radio" name="type" checked /> Permanent exhibition</label>
+            <label><input type="radio" name="type" /> Temporary exhibition</label>
+            <label><input type="radio" name="type" /> Combined ticket</label>
+          </div>
+
+          <div class="ticket-amount">
+            <h3>Amount</h3>
+
+            <div class="amount-group">
+              <span>Basic 18+</span>
+              <div class="counter">
+                <button class="decrease">−</button>
+                <span class="count">1</span>
+                <button class="increase">+</button>
+              </div>
+            </div>
+
+            <div class="amount-group">
+              <span>Senior 65+</span>
+              <div class="counter">
+                <button class="decrease">−</button>
+                <span class="count">1</span>
+                <button class="increase">+</button>
+              </div>
+            </div>
+
+            <div class="total">
+              <p>Total <strong>€220</strong></p>
+            </div>
+
+            <button class="buy-btn" type="submit">Buy Now</button>
+          </div>
+        </form>
       </div>
-
-      <form class="tickets-form">
-        <div class="ticket-options">
-          <h3>Ticket Type</h3>
-          <label><input type="radio" name="type" checked /> Permanent exhibition</label>
-          <label><input type="radio" name="type" /> Temporary exhibition</label>
-          <label><input type="radio" name="type" /> Combined ticket</label>
-        </div>
-
-        <div class="ticket-amount">
-          <h3>Amount</h3>
-
-          <div class="amount-group">
-            <span>Basic 18+</span>
-            <div class="counter">
-              <button type="button">−</button>
-              <span>1</span>
-              <button type="button">+</button>
-            </div>
-          </div>
-
-          <div class="amount-group">
-            <span>Senior 65+</span>
-            <div class="counter">
-              <button type="button">−</button>
-              <span>1</span>
-              <button type="button">+</button>
-            </div>
-          </div>
-
-          <div class="total">
-            <p>Total <strong>€220</strong></p>
-          </div>
-
-          <button class="buy-btn" type="submit">Buy Now</button>
-        </div>
-      </form>
     </div>
+<div id="img-parallax"></div>
   </section>
+  <section class=""></section>
   </main>
 </body>
 

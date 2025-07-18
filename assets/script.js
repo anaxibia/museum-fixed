@@ -2,42 +2,25 @@ const element = document.getElementById("image-compare");
   
 const viewer = new ImageCompare(element).mount();
 
-// const viewers = document.querySelectorAll(".image-compare");
-  
-// viewers.forEach((element) => {
-//   let view = new ImageCompare(element).mount();
-// });
 
-// const options = {
+document.querySelectorAll('.amount-group').forEach(group => {
+  const increaseBtn = group.querySelector('.increase');
+  const decreaseBtn = group.querySelector('.decrease');
+  const countSpan = group.querySelector('.count');
 
-//   // UI Theme Defaults
+  let count = parseInt(countSpan.textContent);
 
-//   controlColor: "#FFFFFF",
-//   controlShadow: true,
-//   addCircle: false,
-//   addCircleBlur: true,
+  increaseBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    count++;
+    countSpan.textContent = count;
+  });
 
-//   // Label Defaults
-
-//   showLabels: false,
-//   labelOptions: {
-//     before: 'Before',
-//     after: 'After',
-//     onHover: false
-//   },
-
-//   // Smoothing
-
-//   smoothing: true,
-//   smoothingAmount: 100,
-
-//   // Other options
-
-//   hoverStart: false,
-//   verticalMode: false,
-//   startingPoint: 50,
-//   fluidMode: false
-// };
-  
-// // Add your options object as the second argument
-// const view = new ImageCompare(element, options).mount();
+  decreaseBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (count > 0) {
+      count--;
+      countSpan.textContent = count;
+    }
+  });
+});

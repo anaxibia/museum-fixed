@@ -13,93 +13,165 @@
     color: var(--font-gold);
     margin: 0;
     line-height: 65px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
-.line {
-  height: 2px;
-  background-color: #661a1a;
-  border: none;
-  width: 100%;
-  margin-bottom: 2rem;
+.tickets .custom-line {
+    margin-bottom: 75px;
 }
 
 .tickets-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 3rem;
-  align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
 }
 
 .tickets-image img {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 720px;
+    height: 550px;
+    display: block;
 }
 
 .tickets-form {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .ticket-options,
 .ticket-amount {
-  flex: 1;
-  min-width: 250px;
+    flex: 1;
+}
+
+.ticket-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .ticket-options h3,
 .ticket-amount h3 {
-  font-weight: bold;
-  margin-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: var(--black);
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.ticket-options h3 {
+    margin-bottom: 50px;
+}
+
+.ticket-amount h3 {
+    margin-bottom: 25px;
 }
 
 .ticket-options label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-size: 16px;
+    display: block;
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+input[type="radio"] {
+    accent-color: black;
 }
 
 .amount-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.counter {
-  display: flex;
-  align-items: center;
-  border: 1px solid black;
-  padding: 4px 8px;
-  gap: 10px;
-}
-
-.counter button {
-  border: none;
-  background: none;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.counter span {
-  width: 20px;
-  text-align: center;
+.amount-group span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-bottom: 15px;
 }
 
 .total p {
-  font-weight: bold;
-  margin-top: 1rem;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 52px;
+    color: var(--black);
 }
 
 .buy-btn {
-  background-color: black;
-  color: white;
-  padding: 10px 24px;
-  border: none;
-  cursor: pointer;
-  margin-top: 1rem;
-  font-size: 16px;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 2;
+    vertical-align: middle;
+    align-items: center;
+    width: 175px;
+    height: 50px;
+    border-radius: 2px;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgba(0, 0, 0, 1);
+    width: 150px;
+    height: 50px;
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+.counter button {
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.counter .count {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#img-parallax {
+    background-image: url(/assets/images/parallax1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+overflow: hidden;
+transition: transform 0.3s ease;}
+
+#img-parallax:hover {
+  /* background-position: center top; */
+transform: scale(1.05) translateX(10px);
 }
