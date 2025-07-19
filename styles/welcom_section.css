@@ -1,12 +1,13 @@
 .welcome {
   background-color: var(--black);
-  height: 750px;
-  overflow: hidden;
+  height: 810px;
   position: relative;
+  overflow: hidden;
 }
 
 .welcome .section-content {
   padding: 0;
+  height: 750px;
 }
 
 .welcome-text {
@@ -94,4 +95,39 @@ color: var(--white);
 
 a#btn-discover:hover {
   background-color: var(--font-gold);
+}
+
+.welcome .carousel-control-panel {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: -60px;
+  right: 0;
+  width: 600px;
+  height: 120px;
+  background-color: var(--black);
+  padding: 40px 74px;
+  color: var(--white);
+  font-size: 22px;
+}
+
+.welcome .carousel-control-panel .count{
+  margin-top: 10px;
+}
+
+.welcome .carousel-control-panel .quick-access ul {
+  display: flex;
+  gap: 25px;
+  font-size: 36px;
+  margin: 0;
+}
+
+.welcome .carousel-control-panel .quick-access ul li.active{
+  color:var(--font-gold);
+}
+.welcome .carousel-control-panel .naviration {
+  display: flex;
+  gap: 20px;
+  font-size: 32px;
 }
