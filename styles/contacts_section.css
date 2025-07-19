@@ -1,0 +1,67 @@
+.contacts {
+    background-color: var(--white);
+    margin: 0;
+}
+
+#contacts-title {
+    font-family: "Forum", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--font-gold);
+    margin: 0;
+    line-height: 65px;
+    padding-bottom: 40px;
+}
+
+.contacts .custom-line {
+    margin-bottom: 75px;
+}
+
+.contacts h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: var(--black);
+    margin: 5px 0
+}
+
+#musee {
+    margin-bottom: 50px;
+}
+
+.contacts p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    height: 26px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    color: var(--black);
+}
+
+#address {
+    margin-top: 0;
+}
+
+#map img{
+    width: 960;
+    height: 620;
+    top: 193px;
+    left: 480px;
+    opacity: 1;
+}
+
+.contacts-content{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+    gap: 112px;
+}
+

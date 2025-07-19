@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+.tickets .section-content{
+    padding: 75px 0;
+}
+
 #tickets-title {
     font-family: "Forum", sans-serif;
     font-weight: 400;
@@ -168,10 +172,10 @@ input[type="radio"] {
     background-repeat: no-repeat;
     background-position: center;
     height: 400px;
-overflow: hidden;
-transition: transform 0.3s ease;}
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
 
 #img-parallax:hover {
-  /* background-position: center top; */
-transform: scale(1.05) translateX(10px);
+    transform: scale(1.05) translateX(10px);
 }

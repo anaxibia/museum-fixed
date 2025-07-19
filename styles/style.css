@@ -36,6 +36,7 @@
   --font-gold-active: #7E6C51;
   --white: rgba(255, 255, 255, 1);
   --black: #000;
+  --grey: #666666;
 }
 
 html {
@@ -73,6 +74,7 @@ header .section-content {
   height: 150px;
   line-height: 100%;
   letter-spacing: 5px;
+  padding: 0;
 }
 
 .section-content{
@@ -85,13 +87,20 @@ header .section-content {
 #page-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-transform: uppercase;
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 5px;
+
+
 }
 
 #page-logo img {
   height: 26px;
   width: 49px;
+  margin-right: 25px;
 }
 
 * {

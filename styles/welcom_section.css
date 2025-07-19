@@ -5,6 +5,10 @@
   position: relative;
 }
 
+.welcome .section-content {
+  padding: 0;
+}
+
 .welcome-text {
   display: inline-block;
   max-width: 50%;

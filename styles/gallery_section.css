@@ -67,3 +67,7 @@
     z-index: 2;
     pointer-events: none;
 }
+
+.gallery img:hover {
+    transform: scale(1.05) translateX(10px);
+}
