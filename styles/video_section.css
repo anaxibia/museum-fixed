@@ -77,7 +77,7 @@
     color: var(--light-grey);
 }
 
-.quick-access-panel ul {
+.quick-access-panel carousel-list {
   display: flex;
   list-style: none;
   gap: 20px;
@@ -85,7 +85,7 @@
   margin: 0;
 }
 
-.quick-access-panel li {
+.quick-access-panel span {
   color: var(--light-grey);
   cursor: pointer;
   transition: all 0.3s ease;
@@ -94,12 +94,12 @@
   font-size: 28px;
 }
 
-.quick-access-panel li:hover {
+.quick-access-panel span:hover {
   color: var(--light-grey);
   transform: scale(1.2);
 }
 
-.quick-access-panel li.active {
+.quick-access-panel span.active {
   color: var(--dark-grey);
   background-color: transparent;
   border-radius: 4px;

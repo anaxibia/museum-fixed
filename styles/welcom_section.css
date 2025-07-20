@@ -47,6 +47,8 @@
   letter-spacing: 2px;
   text-align: center;
   vertical-align: middle;
+  border: none;
+  cursor: pointer;
 }
 
 .welcome-image {
@@ -82,7 +84,7 @@ letter-spacing: 2px;
 color:var(--white);
 }
 
-.welcome a{
+/* .welcome a{
 font-family: "Roboto", "san-serif";
 font-weight: 300;
 font-size: 22px;
@@ -91,9 +93,9 @@ letter-spacing: 2px;
 text-align: center;
 vertical-align: middle;
 color: var(--white);
-}
+} */
 
-a#btn-discover:hover {
+#btn-discover:hover {
   background-color: var(--font-gold);
 }
 
@@ -116,14 +118,14 @@ a#btn-discover:hover {
   margin-top: 10px;
 }
 
-.welcome .carousel-control-panel .quick-access ul {
+.welcome .carousel-control-panel .quick-access .quick-access-list {
   display: flex;
   gap: 25px;
   font-size: 36px;
   margin: 0;
 }
 
-.welcome .carousel-control-panel .quick-access ul li.active{
+.welcome .carousel-control-panel .quick-access .quick-access-list span.active{
   color:var(--font-gold);
 }
 .welcome .carousel-control-panel .naviration {

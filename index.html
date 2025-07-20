@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
@@ -72,10 +73,10 @@
         <div class="welcome-text">
           <h1>WELCOME <br> TO THE LOUVRE</h1>
           <p>From the castle to the museum</p>
-          <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736"
-            id="btn-discover" target="_blank" rel="noopener noreferrer">
+          <button id="btn-discover"
+            onclick="window.open('https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736', '_blank')">
             Discover the Louvre
-          </a>
+          </button>
         </div>
         <div class="welcome-image">
           <img src="assets/images/welcome-slider/monalisa.jpg" alt="Mona Lisa">
@@ -85,13 +86,13 @@
             <span>01&nbsp;&nbsp;|&nbsp;&nbsp;05</span>
           </div>
           <div class="quick-access">
-            <ul>
-              <li class="active">&#9632;</li>
-              <li>&#9632;</li>
-              <li>&#9632;</li>
-              <li>&#9632;</li>
-              <li>&#9632;</li>
-            </ul>
+            <div class="quick-access-list">
+              <span class="active">&#9632;</span>
+              <span>&#9632;</span>
+              <span>&#9632;</span>
+              <span>&#9632;</span>
+              <span>&#9632;</span>
+            </div>
           </div>
           <div class="naviration">
             <span class="left-arrow">&larr;</span>
@@ -239,13 +240,13 @@
             <div class="navigation">
               <span class="double-angle">&laquo;</span>
             </div>
-            <ul>
-              <li class="active">&#9679;</li>
-              <li>&#9679;</li>
-              <li>&#9679;</li>
-              <li>&#9679;</li>
-              <li>&#9679;</li>
-            </ul>
+            <div class="carousel-list">
+              <span class="active">&#9679;</span>
+              <span>&#9679;</span>
+              <span>&#9679;</span>
+              <span>&#9679;</span>
+              <span>&#9679;</span>
+            </div>
             <div class="navigation">
               <span class="double-angle">&raquo;</span>
             </div>
@@ -290,7 +291,7 @@
 
           <form class="tickets-form">
             <div class="ticket-options">
-              <h3>Ticket Type</h3>
+              <h4>Ticket Type</h4>
               <label class="custom-radio"><input type="radio" name="ticket" checked /> <span class="radio-mark"></span>
                 Permanent exhibition</label>
               <label class="custom-radio"><input type="radio" name="ticket" checked /> <span class="radio-mark"></span>
@@ -300,28 +301,30 @@
             </div>
 
             <div class="ticket-amount">
-              <h3>Amount</h3>
+              <h4>Amount</h4>
 
               <div class="amount-group">
-                <span>Basic 18+</span>
+                <label for="quantity-basic">Basic 18+</label>
                 <div class="counter">
                   <button class="decrease">−</button>
                   <span class="count">1</span>
                   <button class="increase">+</button>
+                  <input type="number" id="quantity-basic" name="quantity" min="0" max="10" value="1" step="1">
                 </div>
               </div>
 
               <div class="amount-group">
-                <span>Senior 65+</span>
+                <label for="quantity-senior">Senior 65+</label>
                 <div class="counter">
                   <button class="decrease">−</button>
                   <span class="count">1</span>
                   <button class="increase">+</button>
+                  <input type="number" id="quantity-senior" name="quantity" min="0" max="10" value="1" step="1">
                 </div>
               </div>
 
               <div class="total">
-                <h3>Total <strong>€220</strong></h3>
+                <h4>Total <strong>€220</strong></h4>
               </div>
 
               <button class="buy-btn" type="submit">Buy Now</button>
@@ -337,8 +340,8 @@
         <hr class="custom-line">
         <div class="contacts-content">
           <div class="address">
-            <h3>Palais Royal</h3>
-            <h3 id="musee">Musee du Louvre</h3>
+            <h4>Palais Royal</h4>
+            <h4 id="musee">Musee du Louvre</h4>
             <p id="address">address: 75001 Paris, France</p>
             <p>phone: +33(0) 1 40 20 50 50</p>
             <p>mail: info@louvre.fr</p>
@@ -367,31 +370,35 @@
               <li class="nav_item_footer">
                 <a href="#explore" class="link-dark">Explore</a>
               </li>
-              <li class="nav_item">
+              <li class="nav_item_footer">
                 <a href="#video" class="link-dark">Video</a>
               </li>
-            </ul>
-            <ul>
               <li class="nav_item_footer">
                 <a href="#gallery" class="link-dark">Gallery</a>
               </li>
               <li class="nav_item_footer">
                 <a href="#tickets" class="link-dark">Tickets</a>
               </li>
-              <li class="nav_item">
+              <li class="nav_item_footer">
                 <a href="#contacts" class="link-dark">Contacts</a>
               </li>
             </ul>
           </nav>
         </div>
 
-        <div class="social-icons">
-          <a href="https://www.youtube.com/user/louvre"><i class="fab fa-youtube"></i></a>
-          <a href="https://www.instagram.com/museelouvre/"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/museedulouvre"><i class="fab fa-facebook-f"></i></a>
-          <a href="http://twitter.com/museelouvre"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.pinterest.fr/museedulouvre/"><i class="fab fa-pinterest-p"></i></a>
-        </div>
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.youtube.com/user/louvre"><i class="fab fa-youtube"></i></a>
+          </li>
+          <li> <a href="https://www.instagram.com/museelouvre/"><i class="fab fa-instagram"></i></a>
+          </li>
+          <li><a href="https://www.facebook.com/museedulouvre"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li><a href="http://twitter.com/museelouvre"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li> <a href="https://www.pinterest.fr/museedulouvre/"><i class="fab fa-pinterest-p"></i></a>
+          </li>
+        </ul>
 
       </div>
 
@@ -405,4 +412,5 @@
     </div>
   </footer>
 </body>
+
 </html>

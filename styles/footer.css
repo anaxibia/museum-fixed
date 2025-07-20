@@ -6,21 +6,16 @@ footer .section-content {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 340px 2fr 1fr;
+    grid-template-columns: 340px 1.7fr 2fr;
     align-items: start;
     margin-bottom: 50px;
 }
 
 .nav-container nav {
-    display: grid;
-    grid-template-columns: 200px 200px;
-    align-items: start;
-    gap: 55px;
+     columns: 2;  
 }
 
 .nav_item_footer {
-    border-radius: 5px;
-    height: 26px;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     font-size: 22px;
@@ -28,7 +23,14 @@ footer .section-content {
     letter-spacing: 2px;
     color: var(--white);
     margin-bottom: 25px;
+}
 
+.nav_item_footer a{
+    padding: 0;
+}
+
+.nav_item_footer:nth-child(3n) {
+    margin-bottom: 0;
 }
 
 .footer-nav ul {
@@ -43,8 +45,9 @@ footer .section-content {
     display: flex;
     gap: 25px;
     align-items: end;
-    height: 100%;
     justify-content: end;
+    margin: 0;
+    align-self: end;
 }
 
 .social-icons a {
@@ -58,6 +61,7 @@ footer .section-content {
     color: var(--white);
     font-size: 20px;
     text-decoration: none;
+    margin: 0;
 }
 
 .social-icons a:hover {
