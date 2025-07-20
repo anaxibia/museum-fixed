@@ -12,7 +12,7 @@ footer .section-content {
 }
 
 .nav-container nav {
-     columns: 2;  
+    columns: 2;
 }
 
 .nav_item_footer {
@@ -25,7 +25,7 @@ footer .section-content {
     margin-bottom: 25px;
 }
 
-.nav_item_footer a{
+.nav_item_footer a {
     padding: 0;
 }
 

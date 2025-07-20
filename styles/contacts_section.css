@@ -50,7 +50,7 @@
     margin-top: 0;
 }
 
-#map img{
+#map img {
     width: 960;
     height: 620;
     top: 193px;
@@ -58,10 +58,9 @@
     opacity: 1;
 }
 
-.contacts-content{
+.contacts-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: start;
     gap: 112px;
 }
-

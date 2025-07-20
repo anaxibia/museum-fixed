@@ -2,7 +2,7 @@
     background-color: var(--black);
 }
 
-.explore .section-content{
+.explore .section-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
@@ -12,7 +12,6 @@
 .explore-content {
     display: flex;
     flex-direction: column;
-    /* justify-content: start; */
     gap: 25px;
     width: 660px;
 }
@@ -26,7 +25,6 @@
     text-transform: uppercase;
     color: var(--white);
     margin: 0;
-    /* margin-bottom: 25px; */
 }
 
 .explore .section-content .explore-content .custom-line {

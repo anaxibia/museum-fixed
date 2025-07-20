@@ -1,50 +1,50 @@
 .video {
-    background-color: var(--white);
+  background-color: var(--white);
 }
 
 .video-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: start;
-    margin-bottom: 75px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  margin-bottom: 75px;
 }
 
 #video-title {
-    font-family: "Forum", sans-serif;
-    font-weight: 400;
-    font-size: 80px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: var(--font-gold);
-    margin: 0;
-    line-height: 90px;
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 80px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--font-gold);
+  margin: 0;
+  line-height: 90px;
 }
 
-.video-text p{
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-size: 22px;
-    letter-spacing: 0;
-    line-height: 38.5px;
-    vertical-align: middle;
-    color: var(--black);
-    margin: 0;
-    display: inline;
+.video-text p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 38.5px;
+  vertical-align: middle;
+  color: var(--black);
+  margin: 0;
+  display: inline;
 }
 
-.video iframe{
-    border: none;
-    aspect-ratio: 16 / 9;
+.video iframe {
+  border: none;
+  aspect-ratio: 16 / 9;
 }
 
 .video-player {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .video-thumbnails {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 42px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 42px;
 }
 
 .video-carousel-panel {
@@ -73,8 +73,8 @@
 }
 
 .double-angle {
-    width: 10px;
-    color: var(--light-grey);
+  width: 10px;
+  color: var(--light-grey);
 }
 
 .quick-access-panel carousel-list {

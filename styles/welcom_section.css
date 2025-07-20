@@ -52,9 +52,9 @@
 }
 
 .welcome-image {
-    display: inline-block;
-    position: absolute;
-    right: 0;
+  display: inline-block;
+  position: absolute;
+  right: 0;
 }
 
 .welcome-image img {
@@ -65,35 +65,24 @@
   mask-image: linear-gradient(to right, transparent 0%, black 50%);
 }
 
-.welcome-text h1{
-font-family: "Forum", "san-serif";
-font-weight: 400;
-font-size: 80px;
-line-height: 90px;
-letter-spacing: 5px;
-text-transform: uppercase;
-color: var(--white);
+.welcome-text h1 {
+  font-family: "Forum", "san-serif";
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--white);
 }
 
-.welcome-text p{
-font-family: "Roboto", "san-serif";
-font-weight: 300;
-font-size: 28px;
-line-height: 100%;
-letter-spacing: 2px;
-color:var(--white);
+.welcome-text p {
+  font-family: "Roboto", "san-serif";
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  color: var(--white);
 }
-
-/* .welcome a{
-font-family: "Roboto", "san-serif";
-font-weight: 300;
-font-size: 22px;
-line-height: 100%;
-letter-spacing: 2px;
-text-align: center;
-vertical-align: middle;
-color: var(--white);
-} */
 
 #btn-discover:hover {
   background-color: var(--font-gold);
@@ -114,7 +103,7 @@ color: var(--white);
   font-size: 22px;
 }
 
-.welcome .carousel-control-panel .count{
+.welcome .carousel-control-panel .count {
   margin-top: 10px;
 }
 
@@ -125,9 +114,10 @@ color: var(--white);
   margin: 0;
 }
 
-.welcome .carousel-control-panel .quick-access .quick-access-list span.active{
-  color:var(--font-gold);
+.welcome .carousel-control-panel .quick-access .quick-access-list span.active {
+  color: var(--font-gold);
 }
+
 .welcome .carousel-control-panel .naviration {
   display: flex;
   gap: 20px;
