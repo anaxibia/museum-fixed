@@ -2,6 +2,13 @@
     background-color: var(--white);
 }
 
+.video-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    margin-bottom: 75px;
+}
+
 #video-title {
     font-family: "Forum", sans-serif;
     font-weight: 400;
@@ -10,11 +17,10 @@
     text-transform: uppercase;
     color: var(--font-gold);
     margin: 0;
-    line-height: 50px;
-    padding-bottom: 30px;
+    line-height: 90px;
 }
 
-.video-text {
+.video-text p{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 22px;
@@ -23,80 +29,77 @@
     vertical-align: middle;
     color: var(--black);
     margin: 0;
+    display: inline;
+}
+
+.video iframe{
+    aspect-ratio: 16 / 9;
 }
 
 .video-player {
-  margin-top: 20px;
-}
-
-.video-preview {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  border: 1px solid #ccc;
-}
-
-.preview-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.75);
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  line-height: 80px;
-  font-size: 40px;
-  color: purple;
-  border: 5px solid white;
-  cursor: pointer;
-}
-
-.video-controls {
-  margin-top: 10px;
-}
-
-.progress-bar {
-  background: #ccc;
-  height: 6px;
-  border-radius: 3px;
-  margin-bottom: 8px;
-}
-
-.progress {
-  width: 30%;
-  height: 100%;
-  background: #a00;
-}
-
-.controls {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.controls input[type="range"] {
-  flex: 1;
+    margin-bottom: 40px;
 }
 
 .video-thumbnails {
-  display: flex;
-  gap: 10px;
-  justify-content: space-between;
-  margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 42px;
 }
 
-.video-thumbnails iframe {
-  width: 32%;
-  height: 200px;
+.video-carousel-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.quick-access-panel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navigation {
+  cursor: pointer;
+  font-size: 24px;
+  user-select: none;
+  color: var(--dark-grey);
+  transition: color 0.3s;
+}
+
+.navigation:hover {
+  color: var(--dark-grey);
+}
+
+.double-angle {
+    width: 10px;
+    color: var(--light-grey);
+}
+
+.quick-access-panel ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-access-panel li {
+  color: var(--light-grey);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 4px;
+  width: 12px;
+  font-size: 28px;
+}
+
+.quick-access-panel li:hover {
+  color: var(--light-grey);
+  transform: scale(1.2);
+}
+
+.quick-access-panel li.active {
+  color: var(--dark-grey);
+  background-color: transparent;
   border-radius: 4px;
 }
-
-

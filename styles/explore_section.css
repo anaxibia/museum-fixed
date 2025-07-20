@@ -6,13 +6,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
-    gap: 112px;
+    gap: 60px;
 }
 
 .explore-content {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    /* justify-content: start; */
+    gap: 25px;
+    width: 660px;
 }
 
 .explore-title {
@@ -24,8 +26,11 @@
     text-transform: uppercase;
     color: var(--white);
     margin: 0;
-    line-height: 65px;
-    padding-bottom: 30px;
+    /* margin-bottom: 25px; */
+}
+
+.explore .section-content .explore-content .custom-line {
+    margin: 0 0 50px;
 }
 
 .explore-text {
@@ -36,6 +41,7 @@
     letter-spacing: 0;
     color: var(--white);
     text-align: left;
+    margin: 0;
 }
 
 #yellow-veil {
