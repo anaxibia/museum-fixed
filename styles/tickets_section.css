@@ -187,7 +187,7 @@
 }
 
 #img-parallax {
-    background-image: url(/assets/images/parallax1.jpg);
+    background-image: url(assets/images/parallax1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
