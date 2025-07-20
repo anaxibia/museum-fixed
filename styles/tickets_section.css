@@ -1,0 +1,200 @@
+.tickets {
+    background-color: var(--white);
+    margin: 0;
+}
+
+#tickets-title {
+    font-family: "Forum", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--font-gold);
+    margin: 0;
+    line-height: 90px;
+    padding-bottom: 25px;
+}
+
+.tickets .custom-line {
+    margin-bottom: 75px;
+}
+
+.tickets-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.tickets-image img {
+    width: 720px;
+    height: 550px;
+    display: block;
+}
+
+.tickets-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.ticket-options,
+.ticket-amount {
+    flex: 1;
+}
+
+.ticket-amount {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.ticket-options h4,
+.ticket-amount h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0;
+    color: var(--black);
+    margin-top: 0;
+    margin-bottom: 25px;
+    height: 33px;
+}
+
+.ticket-options h4 {
+    margin-bottom: 50px;
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  color:var(--black);
+  line-height: 100%;
+  flex-direction: row;
+  column-gap: 23px;
+  margin-bottom: 25px;
+}
+
+.custom-radio input {
+  display: none;
+}
+
+.radio-mark {
+    width: 17px;
+    height: 17px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.custom-radio input:checked + .radio-mark::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.amount-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0;
+    flex-direction: column;
+}
+
+
+.amount-group input{
+    display: none;
+}
+
+.amount-group label {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+}
+
+.total h4{
+    margin-top: 43px;
+    margin-bottom: 58px;
+}
+
+.buy-btn {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 2;
+    vertical-align: middle;
+    align-items: center;
+    width: 175px;
+    height: 50px;
+    border-radius: 2px;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3.5px solid rgba(0, 0, 0, 1);
+    width: 150px;
+    height: 50px;
+    padding: 5px 10px;
+    gap: 10px;
+}
+
+.counter button {
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.counter .count {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#img-parallax {
+    background-image: url(/assets/images/parallax1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    overflow: hidden;
+}
+
+#img-parallax:hover {
+    transform: scale(1.05) translateX(10px);
+}

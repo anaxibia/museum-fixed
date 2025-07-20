@@ -1,0 +1,106 @@
+.video {
+    background-color: var(--white);
+}
+
+.video-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    margin-bottom: 75px;
+}
+
+#video-title {
+    font-family: "Forum", sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--font-gold);
+    margin: 0;
+    line-height: 90px;
+}
+
+.video-text p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 0;
+    line-height: 38.5px;
+    vertical-align: middle;
+    color: var(--black);
+    margin: 0;
+    display: inline;
+}
+
+.video iframe{
+    border: none;
+    aspect-ratio: 16 / 9;
+}
+
+.video-player {
+    margin-bottom: 40px;
+}
+
+.video-thumbnails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 42px;
+}
+
+.video-carousel-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.quick-access-panel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navigation {
+  cursor: pointer;
+  font-size: 24px;
+  user-select: none;
+  color: var(--dark-grey);
+  transition: color 0.3s;
+}
+
+.navigation:hover {
+  color: var(--dark-grey);
+}
+
+.double-angle {
+    width: 10px;
+    color: var(--light-grey);
+}
+
+.quick-access-panel carousel-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-access-panel span {
+  color: var(--light-grey);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 4px;
+  width: 12px;
+  font-size: 28px;
+}
+
+.quick-access-panel span:hover {
+  color: var(--light-grey);
+  transform: scale(1.2);
+}
+
+.quick-access-panel span.active {
+  color: var(--dark-grey);
+  background-color: transparent;
+  border-radius: 4px;
+}
