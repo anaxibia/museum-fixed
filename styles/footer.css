@@ -65,8 +65,8 @@ footer .section-content {
 }
 
 .social-icons a:hover {
-    background-color: var(--white);
-    color: var(--black);
+    border-color: var(--font-gold);
+    color: var(--font-gold);
 }
 
 footer .custom-line {
