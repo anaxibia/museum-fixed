@@ -86,7 +86,7 @@ header .section-content {
   padding: 75px 0;
 }
 
-#page-logo {
+.page-logo {
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -99,7 +99,7 @@ header .section-content {
 
 }
 
-#page-logo img {
+.page-logo img {
   height: 26px;
   width: 49px;
   margin-right: 25px;

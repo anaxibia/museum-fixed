@@ -33,6 +33,7 @@
 }
 
 .video iframe{
+    border: none;
     aspect-ratio: 16 / 9;
 }
 
