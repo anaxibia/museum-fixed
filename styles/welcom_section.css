@@ -17,11 +17,11 @@
   font-size: 32px;
 }
 
-.welcome-text h1 {
+/* .welcome-text h1 {
   font-size: 56px;
   line-height: 1.2;
   margin-bottom: 20px;
-}
+} */
 
 .welcome-text p {
   font-family: "Roboto", sans-serif;
@@ -38,7 +38,7 @@
   background-color: var(--dark-red);
   color: var(--white);
   text-decoration: none;
-  padding: 26.5px 64px;
+  padding: 27.5px 64px;
   border-radius: 6px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -49,6 +49,7 @@
   vertical-align: middle;
   border: none;
   cursor: pointer;
+  margin-left: 3px;
 }
 
 .welcome-image {
@@ -65,7 +66,7 @@
   mask-image: linear-gradient(to right, transparent 0%, black 50%);
 }
 
-.welcome-text h1 {
+.welcome-text h2 {
   font-family: "Forum", "san-serif";
   font-weight: 400;
   font-size: 80px;
@@ -73,6 +74,8 @@
   letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--white);
+  margin-top: 150px;
+  margin-bottom: 25px;
 }
 
 .welcome-text p {
@@ -82,6 +85,7 @@
   line-height: 100%;
   letter-spacing: 2px;
   color: var(--white);
+  margin-bottom: 75px;
 }
 
 #btn-discover:hover {
@@ -91,27 +95,29 @@
 .welcome .carousel-control-panel {
   position: absolute;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  bottom: -60px;
+  /* bottom: -60px; */
+  gap: 56px;
   right: 0;
   width: 600px;
   height: 120px;
   background-color: var(--black);
-  padding: 40px 74px;
+  padding: 40px 71px;
   color: var(--white);
   font-size: 22px;
+  margin-top: 152px;
 }
 
-.welcome .carousel-control-panel .count {
+/* .welcome .carousel-control-panel .count {
   margin-top: 10px;
-}
+} */
 
 .welcome .carousel-control-panel .quick-access .quick-access-list {
   display: flex;
-  gap: 25px;
-  font-size: 36px;
-  margin: 0;
+  gap: 19px;
+  font-size: 35px;
+  margin-bottom: 8px;
 }
 
 .welcome .carousel-control-panel .quick-access .quick-access-list span.active {
@@ -121,5 +127,5 @@
 .welcome .carousel-control-panel .naviration {
   display: flex;
   gap: 20px;
-  font-size: 32px;
+  font-size: 31px;
 }

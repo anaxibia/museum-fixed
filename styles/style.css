@@ -29,7 +29,6 @@ body {
 
 
 header {
-  height: 150px;
   background-color: var(--black);
   font-family: "Forum";
   font-size: 28px;
@@ -42,7 +41,6 @@ header .section-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 150px;
   line-height: 100%;
   letter-spacing: 5px;
   padding: 0;
@@ -68,14 +66,23 @@ section {
   font-size: 28px;
   line-height: 100%;
   letter-spacing: 5px;
-
-
 }
 
 .page-logo img {
   height: 26px;
   width: 49px;
   margin-right: 25px;
+  margin-bottom: 6px;
+}
+
+.header h1 {
+  font-family: "Forum", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 * {
@@ -107,13 +114,19 @@ a:link {
 }
 
 .nav_list {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 40px;
-  line-height: 50px;
-  list-style: none;
-  transition: 0.3s;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 55.5px;
+    line-height: 50px;
+    list-style: none;
+    transition: 0.3s;
+}
+
+.header ul{
+  margin-top: 62px;
+  margin-bottom: 62px;
 }
 
 .nav_item {
@@ -125,12 +138,12 @@ a:link {
   line-height: 100%;
   letter-spacing: 2px;
   color: var(--white);
-}
+} 
 
 a.link-dark:link {
   color: var(--white);
   background-color: var(--bg-dark);
-  padding: 4px 8px;
+  /* padding: 4px 8px; */
   text-decoration: none;
 }
 
@@ -146,4 +159,8 @@ a.link-dark:active {
   .section {
     width: 100%;
   }
+}
+
+.container_header_container{
+
 }
