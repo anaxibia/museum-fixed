@@ -38,7 +38,9 @@
     <div class="section-content">
       <div class="page-logo">
         <img src="assets/images/logo.svg" alt="Page logo">
-        <a href="index.html" class="link-dark"><h1>Louvre</h1></a>
+        <a href="index.html" class="link-dark">
+          <h1>Louvre</h1>
+        </a>
       </div>
       <div class="container header_container">
         <nav class="nav">
@@ -116,8 +118,8 @@
               <span class="custom-line-bottom"></span>
             </a>
 
-            <p class="tour-subtitle">360° Virtual Tour</p>
-            <p class="tour-subtitle">Google Street Panorama View</p>
+            <p>360° Virtual Tour</p>
+            <p id="tour-subtitle">Google Street Panorama View</p>
           </div>
 
           <div class="tour-card">
@@ -129,8 +131,8 @@
               <span class="custom-line-bottom"></span>
             </a>
 
-            <p class="tour-subtitle">360° Virtual Tour</p>
-            <p class="tour-subtitle">Google Street Panorama View</p>
+            <p>360° Virtual Tour</p>
+            <p id="tour-subtitle">Google Street Panorama View</p>
           </div>
 
           <div class="tour-card">
@@ -142,8 +144,8 @@
               <span class="custom-line-bottom"></span>
             </a>
 
-            <p class="tour-subtitle">360° Virtual Tour</p>
-            <p class="tour-subtitle">Google Street Panorama View</p>
+            <p>360° Virtual Tour</p>
+            <p id="tour-subtitle">Google Street Panorama View</p>
           </div>
 
           <div class="tour-card">
@@ -155,8 +157,8 @@
               <span class="custom-line-bottom"></span>
             </a>
 
-            <p class="tour-subtitle">360° Virtual Tour</p>
-            <p class="tour-subtitle">Google Street Panorama View</p>
+            <p>360° Virtual Tour</p>
+            <p id="tour-subtitle">Google Street Panorama View</p>
           </div>
 
           <div class="tour-card">
@@ -168,8 +170,8 @@
               <span class="custom-line-bottom"></span>
             </a>
 
-            <p class="tour-subtitle">360° Virtual Tour</p>
-            <p class="tour-subtitle">Google Street Panorama View</p>
+            <p>360° Virtual Tour</p>
+            <p id="tour-subtitle">Google Street Panorama View</p>
           </div>
 
           <div class="tour-card">
@@ -181,8 +183,8 @@
               <span class="custom-line-bottom"></span>
             </a>
 
-            <p class="tour-subtitle">360° Virtual Tour</p>
-            <p class="tour-subtitle">Google Street Panorama View</p>
+            <p>360° Virtual Tour</p>
+            <p id="tour-subtitle">Google Street Panorama View</p>
           </div>
         </div>
       </div>
@@ -215,40 +217,47 @@
               Hammurabi's Code</p>
           </div>
         </div>
-        <div class="video-player">
-          <iframe width="1440" src="https://www.youtube.com/embed/zp1BXPX8jcU?si=AShqE6rezlz6gJv4"
-            title="YouTube video player" style="border: none;"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="video-thumbnails">
-          <iframe width="452" src="https://www.youtube.com/embed/aWmJ5DgyWPI?si=JpJ9LASJXqH0l-eI"
-            title="YouTube video player" style="border: none;"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <iframe width="452" src="https://www.youtube.com/embed/Vi5D6FKhRmo?si=XcbEx_rX1N_sYgfY"
-            title="YouTube video player" style="border: none;"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <iframe width="452" src="https://www.youtube.com/embed/NOhDysLnTvY?si=14krMcYlvKpZ0tWk"
-            title="YouTube video player" style="border: none;"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <div class="video-carousel-panel">
-          <div class="quick-access-panel">
-            <div class="navigation">
-              <span class="double-angle">&laquo;</span>
+        <div class="video-player-container">
+          <div class="video-player-main">
+            <video class="video-player" src="/assets/video/video0.mp4" poster="/assets/images/poster.jpg"></video>
+            <div class="video-controls">
+              <button id="play-button"></button>
+              <input id="play-progress" type="range" value="54" min="0" max="100" step="1">
+              <button id="sound-button"></button>
+              <input id="sound-progress" type="range" value="43" min="0" max="100" step="1">
+              <button id="full-scrin-button"></button>
             </div>
-            <div class="carousel-list">
-              <span class="active">&#9679;</span>
-              <span>&#9679;</span>
-              <span>&#9679;</span>
-              <span>&#9679;</span>
-              <span>&#9679;</span>
-            </div>
-            <div class="navigation">
-              <span class="double-angle">&raquo;</span>
+            <button id="play-big-button"></button>
+          </div>
+          <div class="video-thumbnails">
+            <iframe width="452" src="https://www.youtube.com/embed/aWmJ5DgyWPI?si=JpJ9LASJXqH0l-eI"
+              title="YouTube video player" style="border: none;"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="452" src="https://www.youtube.com/embed/Vi5D6FKhRmo?si=XcbEx_rX1N_sYgfY"
+              title="YouTube video player" style="border: none;"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="452" src="https://www.youtube.com/embed/NOhDysLnTvY?si=14krMcYlvKpZ0tWk"
+              title="YouTube video player" style="border: none;"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="video-carousel-panel">
+            <div class="quick-access-panel">
+              <div class="navigation">
+                <span class="double-angle">&laquo;</span>
+              </div>
+              <div class="carousel-list">
+                <span class="active">&#9679;</span>
+                <span>&#9679;</span>
+                <span>&#9679;</span>
+                <span>&#9679;</span>
+                <span>&#9679;</span>
+              </div>
+              <div class="navigation">
+                <span class="double-angle">&raquo;</span>
+              </div>
             </div>
           </div>
         </div>

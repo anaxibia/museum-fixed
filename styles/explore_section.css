@@ -6,7 +6,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: start;
-    gap: 60px;
+    /* gap: 60px; */
 }
 
 .explore-content {
@@ -50,4 +50,5 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    margin-top: 15px;
 }
