@@ -15,7 +15,6 @@
     text-transform: uppercase;
     color: var(--white);
     margin: 0;
-    line-height: 65px;
     padding-bottom: 75px;
 }
 
@@ -23,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     gap: 36px;
-    max-height: 1970px;
+    max-height: 1960px;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -44,7 +43,7 @@
 }
 
 .col-left {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .col-middle {
@@ -52,7 +51,7 @@
 }
 
 .col-right {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .custom-gallery::after {
