@@ -320,9 +320,7 @@
                   <button class="increase">+</button>
                   <input type="number" id="quantity-basic" name="quantity" min="0" max="10" value="1" step="1">
                 </div>
-              </div>
 
-              <div class="amount-group">
                 <label for="quantity-senior">Senior 65+</label>
                 <div class="counter">
                   <button class="decrease">−</button>
@@ -331,7 +329,6 @@
                   <input type="number" id="quantity-senior" name="quantity" min="0" max="10" value="1" step="1">
                 </div>
               </div>
-
               <div class="total">
                 <h4>Total <strong>€220</strong></h4>
               </div>
@@ -349,11 +346,15 @@
         <hr class="custom-line">
         <div class="contacts-content">
           <div class="address">
-            <h4>Palais Royal</h4>
-            <h4 id="musee">Musee du Louvre</h4>
-            <p id="address">address: 75001 Paris, France</p>
-            <p>phone: +33(0) 1 40 20 50 50</p>
-            <p>mail: info@louvre.fr</p>
+            <h4>
+  <span>Palais Royal</span><br />
+  <span>Musee du Louvre</span>
+</h4>
+            <div class="address-text">
+              <p>address: 75001 Paris, France</p>
+              <a class="contacts-data-text" href="tel:+330140205050">phone: +33(0) 1 40 20 50 50</a>
+              <a class="contacts-data-text" href="mailto:info@louvre.fr">mail: info@louvre.fr</a>
+            </div>
           </div>
           <div id="map">
             <img src="assets/images/map.png" alt="map">
@@ -415,8 +416,8 @@
 
       <div class="footer-bottom">
         <span>© 2025</span>
-        <span>The Rolling Scopes School</span>
-        <span>anaxibia_2025</span>
+        <a href="https://rs.school/courses/javascript-ru">The Rolling Scopes School</a>
+        <a href="https://github.com/anaxibia">anaxibia_2025</a>
       </div>
     </div>
   </footer>

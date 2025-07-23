@@ -135,7 +135,7 @@
 }
 
 .quick-access-panel span:hover {
-  color: var(--light-grey);
+  color: var(--dark-red);
   transform: scale(1.2);
 }
 
@@ -143,6 +143,11 @@
   color: var(--dark-grey);
   background-color: transparent;
   border-radius: 4px;
+}
+
+.quick-access-panel span.active:hover{
+  color: var(--dark-red);
+  transform: scale(1.2);
 }
 
 

@@ -118,10 +118,15 @@
   gap: 19px;
   font-size: 35px;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .welcome .carousel-control-panel .quick-access .quick-access-list span.active {
   color: var(--font-gold);
+}
+
+.welcome .carousel-control-panel .quick-access .quick-access-list span:hover{
+color: var(--font-gold);
 }
 
 .welcome .carousel-control-panel .naviration {
@@ -129,3 +134,10 @@
   gap: 20px;
   font-size: 31px;
 }
+
+.welcome .carousel-control-panel .naviration span:hover{
+  color: var(--font-gold);
+}
+
+
+    

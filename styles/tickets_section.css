@@ -1,6 +1,8 @@
 .tickets {
     background-color: var(--white);
     margin: 0;
+    position: relative;
+    margin-bottom: 400px;
 }
 
 #tickets-title {
@@ -37,35 +39,34 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 32px;
 }
 
-.ticket-options,
-.ticket-amount {
-    flex: 1;
+.ticket-options {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
 }
 
 .ticket-amount {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: end;
 }
 
-.ticket-options h4,
-.ticket-amount h4 {
+.tickets h4 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 28px;
     line-height: 100%;
     letter-spacing: 0;
     color: var(--black);
-    margin-top: 0;
-    margin-bottom: 25px;
-    height: 33px;
+    margin: 0;
+    padding-bottom: 25px;
 }
 
-.ticket-options h4 {
-    margin-bottom: 50px;
+.ticket-amount h4{
+    padding-bottom: 32px;
 }
 
 .custom-radio {
@@ -78,8 +79,7 @@
     color: var(--black);
     line-height: 100%;
     flex-direction: row;
-    column-gap: 23px;
-    margin-bottom: 25px;
+    column-gap: 21px;
 }
 
 .custom-radio input {
@@ -110,11 +110,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 12px;
+    margin-bottom: 54px;
     font-weight: 300;
     line-height: 100%;
     letter-spacing: 0;
     flex-direction: column;
+    gap: 15px;
 }
 
 
@@ -128,12 +129,11 @@
     font-size: 22px;
     line-height: 100%;
     letter-spacing: 0;
-    margin-bottom: 15px;
 }
 
 .total h4 {
-    margin-top: 43px;
-    margin-bottom: 58px;
+    letter-spacing: 1.65px;
+
 }
 
 .buy-btn {
@@ -146,12 +146,17 @@
     font-size: 22px;
     font-weight: 300;
     line-height: 100%;
-    letter-spacing: 2;
+    letter-spacing: 2px;
     vertical-align: middle;
     align-items: center;
     width: 175px;
     height: 50px;
     border-radius: 2px;
+    margin-top: 30px;
+}
+
+.buy-btn:hover {
+  background-color: var(--font-gold);
 }
 
 .counter {
@@ -187,14 +192,16 @@
 }
 
 #img-parallax {
-    background-image: url("../assets/images/parallax1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 400px;
-    overflow: hidden;
-}
 
-#img-parallax:hover {
-    transform: scale(1.05) translateX(10px);
+    content: "";
+    position: absolute;
+    background-image: url("../assets/images/parallax1.jpg");
+    background-position: center 71%;
+    bottom: 100;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
